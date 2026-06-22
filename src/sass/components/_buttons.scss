@@ -1,0 +1,180 @@
+.theme-btn,
+.theme-btn-s2,
+.theme-btn-s3,
+.theme-btn-s4 {
+	background: $theme-primary-color;
+	color: $black;
+	display: inline-block;
+	padding: 20px 50px;
+	border: 0;
+	text-transform: capitalize;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+	position: relative;
+	font-family: $base-font;
+	font-size: 15px;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	overflow: hidden;
+	padding-right: 72px;
+
+	&::after {
+		background-color: darken($theme-primary-color, 11);
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform: scaleY(0);
+		transform-origin: bottom left;
+		transition: transform .5s cubic-bezier(.86, 0, .07, 1);
+		transition-timing-function: cubic-bezier(.86, 0, .07, 1);
+		width: 100%;
+		z-index: -1;
+	}
+
+	&::before {
+		position: absolute;
+		right: 55px;
+		top: 53%;
+		transform: translateY(-50%);
+		content: "";
+		transition: all .3s;
+		color: #000;
+
+
+		@include media-query(767px) {
+			right: 18px;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $black;
+
+		&::before {
+			right: 50px;
+
+			@include media-query(767px) {
+				right: 16px;
+			}
+		}
+	}
+
+	&:hover {
+		&::after {
+			transform-origin: top right;
+			transform: scale(1);
+		}
+	}
+
+	@include media-query(991px) {
+		font-size: 14px;
+	}
+
+	@include media-query(767px) {
+		padding: 17px 38px;
+		font-size: 14px;
+		padding-right: 40px;
+	}
+}
+
+.theme-btn-s2 {
+	background-color: $theme-primary-color;
+	color: $white;
+
+	&::before {
+		background-image: url(../../images/right-arrow.svg);
+		width: 17.684px;
+		height: 13.073px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		right: 47px;
+	}
+
+	&::after {
+		background-color: darken($theme-primary-color, 9);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+
+		&::before {
+			right: 44px;
+		}
+	}
+}
+
+.theme-btn-s3 {
+	background: transparent;
+	box-shadow: none;
+	padding-left: 30px;
+
+	&::before {
+		right: 47px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		&::before {
+			right: 44px;
+		}
+	}
+}
+
+.theme-btn-s4 {
+	background-color: $theme-primary-color;
+	color: $black;
+
+	&::before {
+		content: "\e649";
+		font-family: 'themify';
+		transition: all .3s;
+		font-size: 10px;
+	}
+
+	&::after {
+		background-color: darken($theme-primary-color, 11);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $black;
+	}
+}
+
+.view-cart-btn {
+	@extend .theme-btn;
+	display: block;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 10px 45px;
+
+	&:after {
+		display: none;
+	}
+
+	&:hover {
+		background-color: darken($theme-primary-color, 8%);
+	}
+
+	&.s1 {
+		background: #ddd;
+
+		&:hover {
+			background-color: darken(#ddd, 8%);
+		}
+	}
+
+}

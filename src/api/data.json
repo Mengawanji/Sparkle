@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "proImg": "/product/1.jpg",
+    "title": "Garden hose",
+    "slug": "Garden-hose",
+    "price": "22.00",
+    "oldPrice": "25.00",
+    "brand": "Gucci",
+    "size": "Xl"
+  },
+  {
+    "id": 2,
+    "proImg": "/product/2.jpg",
+    "title": "Ball Valve",
+    "slug": "Ball-Valve",
+    "price": "18.00",
+    "oldPrice": "20.00",
+    "brand": "Gucci",
+    "size": "XXl"
+  },
+  {
+    "id": 3,
+    "proImg": "/product/3.jpg",
+    "title": "Pipe Connections",
+    "slug": "Pipe-Connections",
+    "price": "28.00",
+    "oldPrice": "35.00",
+    "brand": "Gucci",
+    "size": "L"
+  },
+  {
+    "id": 4,
+    "proImg": "/product/4.jpg",
+    "title": "Chave Fixa",
+    "slug": "Chave-Fixa",
+    "price": "32.00",
+    "oldPrice": "35.00",
+    "brand": "Gucci",
+    "size": "M"
+  },
+  {
+    "id": 5,
+    "proImg": "/product/5.jpg",
+    "title": "Brass Faucet",
+    "slug": "Brass-Faucet",
+    "price": "85.00",
+    "oldPrice": "90.00",
+    "brand": "Gucci",
+    "size": "XXl"
+  },
+  {
+    "id": 6,
+    "proImg": "/product/6.jpg",
+    "title": "Slip Joint Pliers",
+    "slug": "Slip-Joint-Pliers",
+    "price": "55.00",
+    "oldPrice": "65.00",
+    "brand": "Gucci",
+    "size": "Xl"
+  }
+]
