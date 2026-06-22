@@ -4,8 +4,8 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Update these for your business
-const BUSINESS_EMAIL = "you@yourcleaningbusiness.com";
-const FROM_EMAIL = "contact@yourcleaningbusiness.com"; // must be on a verified Resend domain
+const BUSINESS_EMAIL = process.env.EMAIL as string;
+const FROM_EMAIL = process.env.ADMIN_EMAIL as string;
 
 interface ContactPayload {
   name: string;

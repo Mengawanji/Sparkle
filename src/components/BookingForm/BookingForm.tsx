@@ -154,18 +154,18 @@ function PriceEstimateBox({ estimate }: { estimate: PriceEstimate }) {
       {estimate.pricingModel === "PER_HOUR" && (
         <>
           <div className="price-row">
-            <span>Rate</span>
+            <span>Rate: </span>
             <span>{fmt(estimate.hourlyRate)} / hr</span>
           </div>
           <div className="price-row">
-            <span>Estimated time</span>
+            <span>Estimated time: </span>
             <span>
-              ~{estimate.estimatedHours.min}–{estimate.estimatedHours.max} hrs
+              {estimate.estimatedHours.min}–{estimate.estimatedHours.max} hrs
             </span>
           </div>
           <div className="price-divider" />
           <div className="price-row price-total">
-            <span>Estimated total</span>
+            <span>Estimated total: </span>
             <span className="price-amount">
               {fmt(estimate.estimatedPrice.min)}–{fmt(estimate.estimatedPrice.max)}
             </span>
@@ -176,12 +176,12 @@ function PriceEstimateBox({ estimate }: { estimate: PriceEstimate }) {
       {estimate.pricingModel === "FLAT_RATE" && (
         <>
           <div className="price-row">
-            <span>Pricing model</span>
+            <span>Pricing model </span>
             <span>Flat rate</span>
           </div>
           <div className="price-divider" />
           <div className="price-row price-total">
-            <span>Estimated total</span>
+            <span>Estimated total: </span>
             {isCustomQuote ? (
               <span className="price-custom-quote">Custom quote</span>
             ) : (

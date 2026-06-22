@@ -49,6 +49,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const detailsHtml = `
     <table style="border-collapse:collapse;width:100%;font-family:sans-serif;font-size:14px;">
+      <tr><td style="padding:6px 0;color:#666;">Client</td><td style="padding:6px 0;font-weight:600;">${name}</td></tr>
+      <tr><td style="padding:6px 0;color:#666;">Phone</td><td style="padding:6px 0;font-weight:600;">${phone}</td></tr>
       <tr><td style="padding:6px 0;color:#666;">Service</td><td style="padding:6px 0;font-weight:600;">${subject}</td></tr>
       <tr><td style="padding:6px 0;color:#666;">Date</td><td style="padding:6px 0;font-weight:600;">${date}</td></tr>
       <tr><td style="padding:6px 0;color:#666;">Time</td><td style="padding:6px 0;font-weight:600;">${time}</td></tr>
@@ -69,7 +71,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       subject: `New booking: ${name} — ${subject}`,
       html: `
         <h2>New appointment request</h2>
-        <p><strong>${name}</strong> (${email}, ${phone}) just requested an appointment.</p>
+        <p><strong>${name}</strong> just requested an appointment.</p>
         ${detailsHtml}
       `,
     });
