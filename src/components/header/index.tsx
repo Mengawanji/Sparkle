@@ -186,7 +186,7 @@ const Header: React.FC<FunFactProps> = ({ hclass }) => {
                           />
                         </svg>
                       </i>
-                      <span>sandyssparkletouch@gmail.com</span>
+                      <span>bookings@sandysparkle.com</span>
                     </a>
                   </div>
 

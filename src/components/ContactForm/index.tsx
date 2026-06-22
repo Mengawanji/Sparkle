@@ -26,6 +26,9 @@ const ContactForm: React.FC = () => {
   const [success, setSuccess] =
     useState(false);
 
+  const [submitError, setSubmitError] =
+    useState<string | null>(null);
+
   const {
     register,
     handleSubmit,
@@ -45,18 +48,31 @@ const ContactForm: React.FC = () => {
   });
 
   const onSubmit = async (
-    _data: FormData
+    data: FormData
   ) => {
 
     setSuccess(false);
+    setSubmitError(null);
 
-    await new Promise((resolve) =>
-      setTimeout(resolve, 1000)
-    );
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    setSuccess(true);
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
 
-    reset();
+      setSuccess(true);
+      reset();
+    } catch (err) {
+      console.error(err);
+      setSubmitError(
+        "Something went wrong. Please try again or contact us directly."
+      );
+    }
   };
 
   return (
@@ -157,7 +173,17 @@ const ContactForm: React.FC = () => {
             role="status"
             aria-live="polite"
           >
-            Message submitted successfully.
+            Message sent! We'll get back to you shortly.
+          </p>
+        )}
+
+        {submitError && (
+          <p
+            className="error"
+            role="alert"
+            aria-live="assertive"
+          >
+            {submitError}
           </p>
         )}
 

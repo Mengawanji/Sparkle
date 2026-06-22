@@ -136,7 +136,7 @@ const Footer: React.FC = () => {
                     </li>
 
                     <li>
-                      sandyssparkletouch@gmail.com
+                      bookings@sandysparkle.com
                     </li>
 
                     <li>

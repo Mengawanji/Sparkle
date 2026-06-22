@@ -2,9 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import blogs from "../../api/blogs";
 import BlogSidebar from "../BlogSidebar";
-import bImg1 from "../../images/blog-details/img-2.jpg";
-import bImg2 from "../../images/blog-details/img-3.jpg";
-import bImg3 from "../../images/blog-details/img-4.jpg";
 
 interface BlogProps {
   bclass?: string;

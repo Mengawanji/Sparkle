@@ -95,7 +95,7 @@ const ContactPage: React.FC = () => {
                   <h2>Email Address</h2>
 
                   <p>
-                    sandyssparkle@gmail.com
+                    bookings@sandysparkle.com
                   </p>
 
                 </div>
