@@ -10,7 +10,6 @@ const TeamSinglePage = lazy(() => import("../TeamSinglePage/TeamSinglePage"));
 const FaqPage = lazy(() => import("../FaqPage"));
 const ServicePage = lazy(() => import("../ServicePage/ServicePage"));
 const ServiceSinglePage = lazy(() => import("../ServiceSinglePage/ServiceSinglePage"));
-const ProductSinglePage = lazy(() => import("../ProductSinglePage"));
 const BlogPage = lazy(() => import("../BlogPage/BlogPage"));
 const BlogPageLeft = lazy(() => import("../BlogPageLeft/BlogPageLeft"));
 const BlogPageFullwidth = lazy(() => import("../BlogPageFullwidth/BlogPageFullwidth"));
@@ -45,7 +44,6 @@ const AllRoute: React.FC = () => {
         <Route path="faq" element={<FaqPage />} />
         <Route path="service" element={<ServicePage />} />
         <Route path="service-single/:slug" element={<ServiceSinglePage />} />
-        <Route path="product-single/:slug" element={<ProductSinglePage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="blog-left-sidebar" element={<BlogPageLeft />} />
         <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
