@@ -160,7 +160,7 @@ const Header: React.FC<FunFactProps> = ({ hclass }) => {
                   </div>
 
                   <div className="close-form">
-                    <a className="theme-btn" href="mailto:example@gmail.com">
+                    <a className="theme-btn" href="mailto:bookings@sandysparkle.com">
                       <i>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

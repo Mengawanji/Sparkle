@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import { useSplitTextAnimation } from "../splittextAnimation/useSplitTextAnimation";
-import beforeImg from "../../images/before-after/before-img.jpg";
-import afterImg from "../../images/before-after/after-img.jpg";
+import afterImg from "../../images/before-after/before-img.jpg";
+import beforeImg from "../../images/before-after/after-img.jpg";
 
 interface TransformingSectionS2Props {
   tClass?: string;
