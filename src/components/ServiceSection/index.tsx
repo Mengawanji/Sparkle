@@ -88,10 +88,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                   <div className="service-text">
 
                     <h3>
-                      {/* <Link to={`/service-single/${service.slug}`}>
+                      <Link to={`/service-single/${service.slug}`}>
                         {service.title}
-                      </Link> */}
-                      {service.title}
+                      </Link>
                     </h3>
 
                     <p>
@@ -99,7 +98,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                     </p>
 
                     {/* BOTTOM */}
-                    {/* <div className="service-bottom">
+                    <div className="service-bottom">
 
                       <div className="text">
                         <Link to={`/service-single/${service.slug}`}>
@@ -135,7 +134,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 
                       </div>
 
-                    </div> */}
+                    </div>
 
                   </div>
 

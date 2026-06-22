@@ -77,7 +77,7 @@ const ServiceSinglePage: React.FC = () => {
 
       <PageTitle
         pageTitle={
-          "Better Plumbing Better Living"
+          "Clean Environment, Better Health"
         }
         pagesub={ServiceDetails.title}
       />
@@ -109,29 +109,33 @@ const ServiceSinglePage: React.FC = () => {
                 </h2>
 
                 <p>
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit.
-                  Placeat qui ducimus illum modi?
-                  Perspiciatis accusamus soluta
-                  perferendis, ad illum,
-                  nesciunt, reiciendis iusto
-                  et cupidit.
+                  Our professional home cleaning
+                  service in Canada is designed
+                  to give you a spotless, fresh,
+                  and healthy living space. Whether
+                  you need a one-time deep clean or
+                  regular maintenance, our trained
+                  cleaners use eco-friendly products
+                  that are safe for your family
+                  and pets.
                 </p>
 
                 <h3>
-                  Expert plumbers.
-                  Trusted service.
+                  Experienced cleaners.
+                  Reliable service.
                 </h3>
 
                 <p>
-                  Need something changed or
-                  is there something not quite
-                  working the way you envisaged?
-                  Is your van a little old and
-                  tired and need refreshing?
-                  Lorem Ipsum is simply dummy
-                  text of the printing and
-                  typesetting industry.
+                  Every home is different, which
+                  is why we tailor our cleaning
+                  plans to suit your specific
+                  needs and schedule. From
+                  kitchens and bathrooms to
+                  bedrooms and living areas,
+                  we ensure every corner of
+                  your home gets the attention
+                  it deserves — leaving it
+                  looking and smelling its best.
                 </p>
 
                 {/* VIDEO */}
@@ -154,30 +158,33 @@ const ServiceSinglePage: React.FC = () => {
                   <div className="video-content">
 
                     <h2>
-                      Why Marketing Important ?
+                      Why Professional Cleaning Matters?
                     </h2>
 
                     <p>
-                      Lorem ipsum dolor sit amet,
-                      consectetur adipisici sed
-                      do eiusmod tempor incididunt
-                      ut labore et.
+                      A clean home is more than
+                      just aesthetics — it directly
+                      impacts your health, reduces
+                      allergens, and creates a
+                      stress-free environment for
+                      you and your family.
                     </p>
 
                     <ul>
 
                       <li>
-                        Research beyond the
-                        business plan
+                        Reduces dust, mold,
+                        and allergens
                       </li>
 
                       <li>
-                        Marketing options and rates
+                        Flexible scheduling
+                        and competitive rates
                       </li>
 
                       <li>
-                        The ability to turnaround
-                        consulting
+                        Fully insured and
+                        background-checked cleaners
                       </li>
 
                     </ul>
@@ -188,22 +195,24 @@ const ServiceSinglePage: React.FC = () => {
 
                 {/* TEXT */}
                 <p>
-                  There are many variations of
-                  passages of lorem ipsum is
-                  simply free text available
-                  in the market, but the
-                  majority time you put aside
-                  to be in our office.
+                  We serve homeowners and renters
+                  across Canada, offering standard
+                  cleaning, deep cleaning, move-in
+                  and move-out cleaning, and
+                  post-renovation cleanup. Our
+                  team arrives on time, fully
+                  equipped, and ready to transform
+                  your space.
                 </p>
 
                 {/* QUOTE */}
                 <h3 className="quate">
 
-                  Business is the activity
-                  of making one's living or
-                  making money by producing
-                  or buying and selling
-                  products.
+                  A clean home is the foundation
+                  of a healthy lifestyle — let us
+                  handle the cleaning so you can
+                  focus on what truly matters
+                  to you.
 
                 </h3>
 
@@ -252,10 +261,10 @@ const ServiceSinglePage: React.FC = () => {
                 <div className="accordion">
 
                   {[
-                    "How to learn digital marketing?",
-                    "Can I use the demos made by Ewebot?",
-                    "Why didn’t you showcase my submission?",
-                    "Why didn’t you showcase my submission?",
+                    "What is included in a standard home cleaning?",
+                    "Do I need to provide cleaning supplies?",
+                    "How do I book a cleaning appointment?",
+                    "Are your cleaners insured and background-checked?",
                   ].map((title, index) => (
 
                     <div
@@ -283,11 +292,14 @@ const ServiceSinglePage: React.FC = () => {
                         <div className="accordion-content">
 
                           <p>
-                            Ne summo dictas
-                            pertinacia nam.
-                            Illum cetero vocent
-                            ei vim, case regione
-                            signiferumque vim te.
+                            {index === 0 &&
+                              "Our standard cleaning covers dusting all surfaces, vacuuming and mopping floors, cleaning bathrooms and kitchens, wiping down appliances, and emptying trash bins throughout your home."}
+                            {index === 1 &&
+                              "No — our team arrives fully equipped with professional-grade, eco-friendly cleaning products and tools. If you have a preferred product you'd like us to use, just let us know in advance."}
+                            {index === 2 &&
+                              "Booking is easy! You can schedule an appointment online through our website, call us directly, or send us a message. We offer flexible time slots on weekdays and weekends to fit your schedule."}
+                            {index === 3 &&
+                              "Absolutely. All of our cleaners undergo thorough background checks and are fully insured. Your safety and peace of mind are our top priorities."}
                           </p>
 
                         </div>
@@ -349,19 +361,19 @@ const ServiceSinglePage: React.FC = () => {
                   </div>
 
                   <h2>
-                    Looking for Plumbing
-                    service Provider?
+                    Looking for Cleaning
+                    service?
                   </h2>
 
                   <span>Call anytime</span>
 
                   <a
-                    href="tel:+871382023"
+                    href="tel:+15195771711"
                     className="num"
                   >
 
                     <span>
-                      +(2) 871 382 023
+                      +15195771711
                     </span>
 
                   </a>
