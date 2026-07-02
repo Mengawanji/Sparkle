@@ -12,7 +12,7 @@ const MarqueeSection: React.FC = () => {
   const marqueeItems: MarqueeItem[] = [
     {
       id: 1,
-      text: "8 AM – 6 PM Saturday: 9 AM – 4 PM Sunday: Closed",
+      text: "Monday - Sunday 8 AM – 6 PM",
     },
 
     {

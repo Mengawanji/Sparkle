@@ -25,7 +25,7 @@ const BlogSidebar: React.FC = () => {
 
         <p>
           Sandra is a professional home cleaning specialist and organizer
-          based in New York, passionate about spotless living spaces.
+          based in Ottawa, Canada. Passionate about spotless living spaces.
         </p>
 
         <ul>

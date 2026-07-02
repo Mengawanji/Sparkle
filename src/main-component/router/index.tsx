@@ -39,7 +39,7 @@ const AllRoute: React.FC = () => {
         <Route path="about" element={<AboutPage />} />
         <Route path="appointment" element={<AppointmentPage />} />
         <Route path="project" element={<ProjectPage />} />
-        <Route path="project-single/:slug" element={<ProjectSinglePage />} />
+        <Route path="single/:slug" element={<ProjectSinglePage />} />
         <Route path="team-single/:slug" element={<TeamSinglePage />} />
         <Route path="faq" element={<FaqPage />} />
         <Route path="service" element={<ServicePage />} />

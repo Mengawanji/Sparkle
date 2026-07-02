@@ -29,7 +29,7 @@ const menus: MenuItem[] = [
     title: "Services",
     children: [
       { title: "We Offer",  link: "/service",},
-      { title: "Gig",  link: "/project-single/deep-clean",},
+      { title: "Gig",  link: "/single/deep-clean",},
     ],
   },
   {

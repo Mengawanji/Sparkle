@@ -373,7 +373,7 @@ const ServiceSinglePage: React.FC = () => {
                   >
 
                     <span>
-                      +15195771711
+                      +1 519 577 1711
                     </span>
 
                   </a>

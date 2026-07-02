@@ -144,7 +144,7 @@ const Footer: React.FC = () => {
                     </li>
 
                     <li>
-                      Monday - Saturday
+                      Monday - Sunday
                     </li>
 
                   </ul>
