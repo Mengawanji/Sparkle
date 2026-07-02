@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
                 />
             </Helmet>
             <Navbar />
-            <PageTitle pageTitle={'Contact Us'} pagesub={'Contact'}/> 
+            <PageTitle pageTitle={'Fresh Air. Fresh Start.'} pagesub={'Contact'}/> 
             <Contactpage/>
             <MarqueeSection/>
             <Footer/>

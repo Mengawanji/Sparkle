@@ -121,7 +121,7 @@ const ServiceSinglePage: React.FC = () => {
                   service in Canada is designed
                   to give you a spotless, fresh,
                   and healthy living space. Whether
-                  you need a one-time deep clean or
+                  you need a <Link to="/single/deep-clean">one-time deep clean</Link> or
                   regular maintenance, our trained
                   cleaners use eco-friendly products
                   that are safe for your family
@@ -137,7 +137,7 @@ const ServiceSinglePage: React.FC = () => {
                   Every home is different, which
                   is why we tailor our cleaning
                   plans to suit your specific
-                  needs and schedule. From
+                  needs and <Link to="/appointment">schedule</Link>. From
                   kitchens and bathrooms to
                   bedrooms and living areas,
                   we ensure every corner of

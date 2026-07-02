@@ -106,7 +106,7 @@ const ProjectSinglePage: React.FC = () => {
                                     <div className="col col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div className="wpo-project-details-text">
                                             <span>Date</span>
-                                            <h2>19 Nov 2026</h2>
+                                            <h2>19 Nov 2025</h2>
                                         </div>
                                     </div>
 
