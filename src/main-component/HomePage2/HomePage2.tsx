@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/Navbar/Navbar';
+import { Helmet } from "react-helmet-async";
 import Hero2 from '../../components/hero2';
 import AboutSection2 from '../../components/about2/about2';
 import TransformingSectionS2 from '../../components/TransformingSectionS2/TransformingSectionS2';
@@ -16,6 +17,12 @@ import Scrollbar from '../../components/scrollbar/scrollbar';
 const HomePage2: React.FC = () => {
     return (
         <Fragment>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Sandy Sparkle provides reliable residential, commercial, deep cleaning, and move-in/move-out cleaning services. Book trusted professional cleaners today."
+                />
+            </Helmet>
             <Navbar hclass='header-s2'/>
             <Hero2 />
             <AboutSection2 />

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
+import { Helmet } from "react-helmet-async";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import MarqueeSection from "../../components/MarqueeSection/MarqueeSection";
 import Footer from "../../components/footer/Footer";
@@ -72,6 +73,13 @@ const ServiceSinglePage: React.FC = () => {
   return (
 
     <Fragment>
+
+      <Helmet>
+        <meta
+          name="description"
+          content="Our deep cleaning service reaches every corner of your home, removing built-up dirt, bacteria, and allergens for a fresher and healthier living space."
+        />
+    </Helmet>
 
       <Navbar />
 

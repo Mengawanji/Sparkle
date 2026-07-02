@@ -6,7 +6,6 @@ const AboutPage = lazy(() => import("../AboutPage/AboutPage"));
 const AppointmentPage = lazy(() => import("../AppointmentPage/AppointmentPage"));
 const ProjectPage = lazy(() => import("../ProjectPage/ProjectPage"));
 const ProjectSinglePage = lazy(() => import("../ProjectSinglePage/ProjectSinglePage"));
-const TeamSinglePage = lazy(() => import("../TeamSinglePage/TeamSinglePage"));
 const FaqPage = lazy(() => import("../FaqPage"));
 const ServicePage = lazy(() => import("../ServicePage/ServicePage"));
 const ServiceSinglePage = lazy(() => import("../ServiceSinglePage/ServiceSinglePage"));
@@ -40,7 +39,6 @@ const AllRoute: React.FC = () => {
         <Route path="appointment" element={<AppointmentPage />} />
         <Route path="project" element={<ProjectPage />} />
         <Route path="single/:slug" element={<ProjectSinglePage />} />
-        <Route path="team-single/:slug" element={<TeamSinglePage />} />
         <Route path="faq" element={<FaqPage />} />
         <Route path="service" element={<ServicePage />} />
         <Route path="service-single/:slug" element={<ServiceSinglePage />} />

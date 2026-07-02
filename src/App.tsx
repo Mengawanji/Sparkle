@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { ToastContainer } from "react-toastify";
 import AllRoute from "./main-component/router";
+import { Helmet } from "react-helmet-async";
 import Lenis from "lenis";
 import ErrorBoundary from "./ErrorBoundary";
 
@@ -41,7 +42,8 @@ const App: React.FC = () => {
   return (
     <div className="App lenis" id="scroll">
       <ErrorBoundary>
-        <>
+        <> 
+          <Helmet defaultTitle="Sandy Sparkle | Home Cleaning Services" />
           <AllRoute />
           <ToastContainer position="top-right" autoClose={3000} />
         </>

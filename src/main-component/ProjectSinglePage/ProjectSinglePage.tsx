@@ -6,9 +6,8 @@ import PageTitle from "../../components/pagetitle/PageTitle";
 import MarqueeSection from '../../components/MarqueeSection/MarqueeSection';
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import Footer from "../../components/footer/Footer";
-
+import { Helmet } from "react-helmet-async";
 import projects from "../../api/projects";
-
 import project2 from "../../images/project-single/2.jpg";
 import project3 from "../../images/project-single/3.jpg";
 
@@ -50,6 +49,14 @@ const ProjectSinglePage: React.FC = () => {
 
     return (
         <Fragment>
+
+            <Helmet>
+                <title>Professional Deep Cleaning | Sandy Sparkle</title>
+                <meta
+                    name="description"
+                    content="Our deep cleaning service reaches every corner of your home, removing built-up dirt, bacteria, and allergens for a fresher and healthier living space."
+                />
+            </Helmet>
 
             <Navbar />
 

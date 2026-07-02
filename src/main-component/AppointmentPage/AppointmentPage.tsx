@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
+import { Helmet } from "react-helmet-async";
 import PageTitle from '../../components/pagetitle/PageTitle';
 import { Fade } from "react-awesome-reveal";
 import sparkleIcon from "../../images/cleaning-icon.svg";
@@ -11,6 +12,13 @@ import Footer from '../../components/footer/Footer';
 const AppointmentPage: React.FC = () => {
   return (
     <Fragment>
+      <Helmet>
+        <title>Book a Cleaning Appointment | Sandy Sparkle</title>
+        <meta
+          name="description"
+          content="Schedule your residential or commercial cleaning service with Sandy Sparkle. Book an appointment online and enjoy a cleaner, healthier space."
+        />
+      </Helmet>
       <Navbar />
       <PageTitle pageTitle={'Because Every Clean Space Matters'} pagesub={'Appoinment'} />
       <section className="wpo-booking-section style-3 section-padding">
